@@ -1,9 +1,29 @@
 import { useState } from "react";
 import "./App.css";
-import data from "./Data";
+import data from "./Data.jsx";
+import Tours from "./components/Tours";
 
 function App() {
   const [tours, setTours] = useState(data);
+  console.log("Inside App");
+  console.log(data);
+
+  if (tours.length === 0) {
+    return (
+      <div className="refresh">
+        <h2>No Tours Left</h2>
+        <button
+          className="refresh-btn"
+          onClick={() => {
+            setTours(data);
+          }}
+        >
+          {" "}
+          Refresh
+        </button>
+      </div>
+    );
+  }
 
   function removeTour(id) {
     const newTours = tours.filter((tour) => tour.id !== id);
@@ -13,8 +33,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Plan with Love</h1>
-        <Tours tours={tours}></Tours>
+        <Tours tours={tours} removeTour={removeTour}></Tours>
       </div>
     </>
   );
