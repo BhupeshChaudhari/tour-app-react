@@ -9,6 +9,9 @@ function Tours({ tours }) {
           return <Card tourData={tour}></Card>;
         })}
       </div>
+      <div>
+        <h1>Hello</h1>
+      </div>
     </div>
   );
 }
