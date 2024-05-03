@@ -31,7 +31,7 @@ body {
 
 .cards {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   flex-wrap: wrap;
   max-width: 1300px;

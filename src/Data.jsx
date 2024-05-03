@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     name: "Agra",
-    info: "Agra's notable historical period began during Sikandar Lodi's reign, but the golden age of the city began with the Mughals in the early 16th century. Agra was the foremost city of the Indian subcontinent and the capital of the Mughal Empire under Mughal emperors Babur, Humayun, Akbar, Jahangir and Shah Jahan. Under Mughal rule, Agra became a centre for learning, arts, commerce, and religion, and saw the construction of the Agra Fort, Sikandra and Agra's most prized monument, the Taj Mahal, constructed between 1632 and 1648 by Shah Jahan in remembrance of his wife Mumtaz Mahal. ",
+    info: "Agra's notable historical period began during Sikandar Lodi's reign, but the golden age of the city began with the Mughals in the early 16th century. Agra was the foremost city of the Indian subcontinent and the capital of the Mughal Empire under Mughal emperors Babur, Humayun, Akbar, Jahangir and Shah Jahan. Under Mughal rule, Agra became a centre for learning, arts,. ",
     image: "https://cdn.thecodehelp.in/Agra.jpeg",
     price: "35,768",
   },
