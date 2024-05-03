@@ -13,12 +13,11 @@ function App() {
       <div className="refresh">
         <h2>No Tours Left</h2>
         <button
-          className="refresh-btn"
+          className="button-white"
           onClick={() => {
             setTours(data);
           }}
         >
-          {" "}
           Refresh
         </button>
       </div>
@@ -32,7 +31,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="App">
         <Tours tours={tours} removeTour={removeTour}></Tours>
       </div>
     </>

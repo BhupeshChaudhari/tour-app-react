@@ -1,3 +1,118 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 8vh;
+  border: 7px dashed rgb(32, 158, 203);
+  border-radius: 20px;
+  padding: 3vh 5vw;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 400px;
+  height: max-content;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0.24) 0px 3px 8px;
+}
+
+.image {
+  width: 380px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.tour-info {
+  margin: 20px 5px;
+}
+
+.btn-red {
+  display: inline-block;
+  outline: 0;
+  text-align: center;
+  cursor: pointer;
+  height: 34px;
+  padding: 0 13px;
+  color: #fff;
+  vertical-align: top;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  background: #d7684d;
+  border-color: #000000;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 16px;
+  font-size: 11px;
+}
+
+.btn-red:hover {
+  background: #ff3f0f;
+  border-color: #e4461b;
+}
+
+.tour-price {
+  color: #1faa59;
+  font-size: 1.3rem;
+}
+
+.tour-name {
+  font-size: 1.5 rem;
+  margin: 0.5rem 0;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.read-more {
+  color: #12d0e8;
+  cursor: pointer;
+}
+
+.refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.button-white {
+  margin: 0.5rem;
+  cursor: pointer;
+  padding: 10px 80px;
+  border: 1px solid white;
+}

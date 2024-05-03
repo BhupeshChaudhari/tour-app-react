@@ -4,11 +4,11 @@ function Tours({ tours, removeTour }) {
   console.log("Inside Tours");
   console.log(tours);
   return (
-    <div>
+    <div className="container">
       <div>
-        <h2> Plan with Love</h2>
+        <h2 className="title"> Plan With Love</h2>
       </div>
-      <div>
+      <div className="cards">
         {tours.map((tour) => {
           return <Card {...tour} removeTour={removeTour}></Card>;
         })}
